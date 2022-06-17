@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/footer'
 import NavBar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <NavBar/>
       <h1>Bread of The Day</h1>
+      <Footer/>
 
      
     </div>
