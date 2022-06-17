@@ -19,7 +19,7 @@ const MainBreed = ({image, breedName, description, url}:MainBreedProps) => {
 <section>
   <h2>{breedName}</h2>
   <p>{description}</p>
-  <p>{url}</p>
+  <p><a href={url} target="_blank" rel="noopener noreferrer">{url}</a></p>
 </section>
 <hr/>
     </div>
