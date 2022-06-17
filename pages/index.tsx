@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import CollectionCats from '../components/collectioncats'
 import Footer from '../components/footer'
 import MainBreed from '../components/mainbreed'
 import NavBar from '../components/navbar'
@@ -27,14 +28,24 @@ console.log('catBreeds', catBreeds)
         <meta name="description" content="Created by Shuampi" />
       
       </Head>
+
       <NavBar/>
-      <h1>Bread of The Day</h1>
+
+      <h1>Breed of The Day</h1>
+
       <MainBreed 
       image={catBreeds[0].image.url} 
       breedName={catBreeds[0].name} 
       description={catBreeds[0].description} 
       url={catBreeds[0].cfa_url}      
       />
+      <h2>Random Breeds on Refresh!</h2>
+      <p>Click on the image for more info</p>
+
+      <CollectionCats
+      catBreeds={catBreeds}
+      />
+      
       <Footer/>
 
      

@@ -18,17 +18,20 @@ const handelShow = () => setShow(!show)
     <div>
         <Image
          alt="random breed picture" 
-         width={50}
-         height={50}
+         width={200}
+         height={200}
          src={image}
          onClick={handelShow}
         />
-        <h2>{breedName}</h2>
-        <div>                    {/* it will expand after click*/}
+        {show &&(<div>                    {/* it will expand after click*/}
         <h1>{breedName}</h1>
         <p>{description}</p>
          <p>{url}</p>
-        </div>
+        </div>)}
+
+        {!show && ( <h2>{breedName}</h2>)}
+       
+        
     </div>
   )
 }
