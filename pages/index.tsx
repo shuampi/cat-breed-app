@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css'
 const API_KEY = process.env.NEXT_PUBLIC_KEY
 
 interface HomeProps{
-  catBreeds:any;
+  catBreeds:any[];
 }
 
 
@@ -45,7 +45,7 @@ console.log('catBreeds', catBreeds)
       <CollectionCats
       catBreeds={catBreeds}
       />
-      
+
       <Footer/>
 
      
