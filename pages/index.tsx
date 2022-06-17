@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       
       </Head>
       <NavBar/>
+      <h1>Bread of The Day</h1>
 
      
     </div>
