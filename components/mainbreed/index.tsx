@@ -1,12 +1,14 @@
+import style from "./index.module.css"
 import Image from "next/image"
+
 interface MainBreedProps{
   image:string;
-  breadName:string;
+  breedName:string;
   description:string;
   url:string
 }
 
-const MainBreed = ({image, breadName, description, url}:MainBreedProps) => {
+const MainBreed = ({image, breedName, description, url}:MainBreedProps) => {
   return (
     <div>
 <Image alt="breed of the day" 
@@ -15,11 +17,11 @@ const MainBreed = ({image, breadName, description, url}:MainBreedProps) => {
  src={image}
 />
 <section>
-  <h2>{breadName}</h2>
+  <h2>{breedName}</h2>
   <p>{description}</p>
   <p>{url}</p>
 </section>
-
+<hr/>
     </div>
   )
 }
