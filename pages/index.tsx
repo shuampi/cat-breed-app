@@ -20,6 +20,20 @@ const Home= ({catBreeds}:HomeProps) => {
 
 console.log('catBreeds', catBreeds)
 //console.log('catBreeds[0]', catBreeds[0].name)
+const arrayOrigins = catBreeds.map(cat => cat.origin)
+console.log('arrayOrigins', arrayOrigins)
+
+const noDuplicateOrigins = arrayOrigins.filter((origin,index) =>{
+  return arrayOrigins.indexOf(origin) === index
+})
+
+console.log('noDuplicateOrigins', noDuplicateOrigins)
+
+const japanCats = catBreeds.filter(cat => cat.origin==="Japan")
+console.log('japanCats', japanCats)
+
+const unitedStateCats = catBreeds.filter(cat => cat.origin==="United States")
+console.log('eeuuCats', unitedStateCats)
 
   return (
     <div className={styles.container}>
@@ -39,7 +53,7 @@ console.log('catBreeds', catBreeds)
       description={catBreeds[0].description} 
       url={catBreeds[0].cfa_url}      
       />
-      <h2>Random Breeds on Refresh!</h2>
+      <h2>Cat Breeds Around The World</h2>
       <p>Click on the image for more info</p>
 
       <CollectionCats

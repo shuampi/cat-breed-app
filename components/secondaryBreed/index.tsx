@@ -7,6 +7,7 @@ interface SecondaryBreedProps {
   breedName: string;
   description: string;
   url: string;
+  breedOrigin:string
 }
 
 const SecondaryBread = ({
@@ -14,6 +15,7 @@ const SecondaryBread = ({
   breedName,
   description,
   url,
+  breedOrigin
 }: SecondaryBreedProps) => {
   const [show, setShow] = useState(false);
   const handelShow = () => setShow(!show);
@@ -35,7 +37,12 @@ const SecondaryBread = ({
         </div>
       )}
 
-      {!show && <h2>{breedName}</h2>}
+      {!show &&
+      (<div>
+         <h2>{breedName}</h2>
+      <p>{breedOrigin}</p>
+      </div>
+      )}
     </div>
   );
 };
