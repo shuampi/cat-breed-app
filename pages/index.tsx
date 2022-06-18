@@ -68,7 +68,7 @@ console.log('eeuuCats', unitedStateCats)
 }
 
 export async function getStaticProps() {
-  const catResponse = await fetch(`https://api.thecatapi.com/v1/breeds`);
+  const catResponse = await fetch(`https://api.thecatapi.com/v1/breeds?api_key=${API_KEY}`);
   const catBreeds= await catResponse.json();
   
   

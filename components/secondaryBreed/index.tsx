@@ -19,6 +19,12 @@ const SecondaryBread = ({
 }: SecondaryBreedProps) => {
   const [show, setShow] = useState(false);
   const handelShow = () => setShow(!show);
+  
+if(image===undefined){
+  image = "https://cdn2.thecatapi.com/images/hBXicehMA.jpg"
+}
+
+
 
   return (
     <div>
