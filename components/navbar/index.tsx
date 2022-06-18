@@ -5,14 +5,14 @@ import Image from "next/image";
 
 import { useState } from "react";
 
-// interface NavBarProps {
-//   handelSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
-//   handleClick: () => void;
-//   search?: string;
-// }
-//const API_KEY = process.env.NEXT_PUBLIC_KEY;
+interface NavBarProps {
+  handelSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleClick: () => void;
+  search?: string;
+}
+const API_KEY = process.env.NEXT_PUBLIC_KEY;
 
-const NavBar = () => {
+const NavBar = ({ handelSearch, handleClick, search }: NavBarProps) => {
     const [showSearch, setShowSearch] = useState(false);
 
 
@@ -35,15 +35,16 @@ const NavBar = () => {
     
       {showSearch && (
         <div  className={showSearch? style.search :style.hideSearch}>
+          
           <input
             className={style.input}
             type="search"
-            // onChange={handelSearch}
-            // value={search}
+            onChange={handelSearch}
+            value={search}
             required
           />
           <Link href="/search">
-            <button className={style.button}>
+            <button className={style.button} onClick={() => handleClick()}>
               Search
             </button>
           </Link>
