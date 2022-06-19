@@ -23,13 +23,13 @@ const Home= ({handelSearch, handleClick,search,catBreeds}:HomeProps) => {
 
 console.log('catBreeds', catBreeds)
 //console.log('catBreeds[0]', catBreeds[0].name)
-const arrayOrigins = catBreeds.map(cat => cat.origin)
+// const arrayOrigins = catBreeds.map(cat => cat.origin)
 // console.log('arrayOrigins', arrayOrigins)
 
 
-const noDuplicateOrigins = arrayOrigins.filter((origin,index) =>{
-  return arrayOrigins.indexOf(origin) === index
-})
+// const noDuplicateOrigins = arrayOrigins.filter((origin,index) =>{
+//   return arrayOrigins.indexOf(origin) === index
+// })
 
 // console.log('noDuplicateOrigins', noDuplicateOrigins)
 
@@ -53,13 +53,16 @@ const noDuplicateOrigins = arrayOrigins.filter((origin,index) =>{
       search={search}
       />
 
-      <h1>Breed of The Day</h1>
+      <h1 className={styles.breedDay}>Breed of The Day</h1>
 
       <MainBreed 
       image={catBreeds[0].image.url} 
       breedName={catBreeds[0].name} 
       description={catBreeds[0].description} 
-      url={catBreeds[0].cfa_url}      
+      url={catBreeds[0].cfa_url} 
+      origin={catBreeds[0].origin} 
+      temperament={catBreeds[0].temperament}
+      lifeSpan={catBreeds[0].life_span}    
       />
       <h2>Cat Breeds Around The World</h2>
       <p>Click on the image for more info</p>

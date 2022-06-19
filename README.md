@@ -2,6 +2,6 @@
 
 # Breed Cat App.
 
-## https://breedscat.netlify.app/
+## https://catbreedsinfo.netlify.app/
 
 

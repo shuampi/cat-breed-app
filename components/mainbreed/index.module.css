@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+
+}
+.section{
+    font-family: 'Poppins', sans-serif;
+    margin: 0.2rem 2rem;
+    max-width: 60%; 
+    padding-right: 2rem;  
+}
+
+.image{
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+   .main{
+    display: block;
+   }
+   .image{
+    margin: 0 2rem;
+   }
+   .section{
+    max-width: 100%;
+    padding: 0 0;
+   }
+  
+  }

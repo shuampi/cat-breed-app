@@ -39,7 +39,7 @@ if(image===undefined){
         <div>
           <h1>{breedName}</h1>
           <p>{description}</p>
-          <p>{url}</p>
+          <p><a href={url} target="_blank" rel="noopener noreferrer">{url}</a></p>
         </div>
       )}
 

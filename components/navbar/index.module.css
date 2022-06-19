@@ -93,6 +93,16 @@
     cursor: pointer;
    background-color: white;
 }
+.header{
+   /* font-family: 'Pacifico', cursive; */
+   font-family: 'Lobster', cursive;
+   /* font-family: 'Dancing Script', cursive; */
+   /* font-family: 'Fascinate Inline', cursive; */
+   font-size: 3rem;
+   margin: 0;
+   padding: 0.5rem 0rem;
+}
+
 @media screen and (max-width: 750px) {
     .navList {
       display: none;
