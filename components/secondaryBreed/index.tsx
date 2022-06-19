@@ -27,25 +27,26 @@ if(image===undefined){
 
 
   return (
-    <div>
+    <div className={style.container}>
+      <div className={style.image}>
       <Image
         alt="random breed picture"
         width={200}
         height={200}
         src={image}
         onClick={handelShow}
-      />
+      /></div>
       {show && (
-        <div>
-          <h1>{breedName}</h1>
+        <div >
+          <h2 className={style.title}>{breedName}</h2>
           <p>{description}</p>
-          <p><a href={url} target="_blank" rel="noopener noreferrer">{url}</a></p>
+          <p><a href={url} target="_blank" rel="noopener noreferrer">More information</a></p>
         </div>
       )}
 
       {!show &&
-      (<div>
-         <h2>{breedName}</h2>
+      (<div >
+         <h2 className={style.title}>{breedName}</h2>
       <p>{breedOrigin}</p>
       </div>
       )}

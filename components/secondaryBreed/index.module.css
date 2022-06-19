@@ -1,0 +1,12 @@
+.title{
+    margin: 0 0;
+    text-align: center;
+}
+.image{
+    margin:0 1.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+}

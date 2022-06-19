@@ -28,21 +28,21 @@ const handelSelection = (e: { target: { value: SetStateAction<string>; }; }) => 
 
 
   return (
-    <div>
-     <label>
+    <div className={style.collection}>
+     <label className={style.label}>
         show cats by origin:  
-        <select value={selection}  onChange={handelSelection}>
+        <select className={style.select} value={selection}  onChange={handelSelection}>
     <option  value="" disabled hidden>Select an option</option>
 {noDuplicateOrigins.map( (origin,index) => <option key={index} value={origin}>{origin}</option>)}
         </select>
     </label>
-
+    <div className={style.container}>
     {
       !swap &&(
       catBreeds.map((cat,index) =>{
         if(catBreeds.indexOf(cat)<9){
          
-          return <SecondaryBread 
+          return<SecondaryBread 
         key={catBreeds[index].name}
         image={catBreeds[index].image.url} 
         breedName={catBreeds[index].name} 
@@ -51,11 +51,12 @@ const handelSelection = (e: { target: { value: SetStateAction<string>; }; }) => 
         breedOrigin={catBreeds[index].origin} 
         /> 
         }
-      
       })
       )
     }
-    <div>
+    </div>
+
+    <div className={style.container}>
       { swap && (
       singleOriginCats.map((cat,index) =>{
         if(singleOriginCats.indexOf(cat)<9){

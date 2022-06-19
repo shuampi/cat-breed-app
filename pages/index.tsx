@@ -64,8 +64,8 @@ console.log('catBreeds', catBreeds)
       temperament={catBreeds[0].temperament}
       lifeSpan={catBreeds[0].life_span}    
       />
-      <h2>Cat Breeds Around The World</h2>
-      <p>Click on the image for more info</p>
+      <h2  className={styles.breedDay}>Cat Breeds Around The World</h2>
+      <p  className={styles.subtitle}>Click on an image for more Information</p>
 
       <CollectionCats
       catBreeds={catBreeds}
