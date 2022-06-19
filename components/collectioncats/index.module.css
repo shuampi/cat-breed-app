@@ -19,3 +19,11 @@
     font-family: 'Poppins', sans-serif;
     padding: 0.2rem 1.5rem;
 }
+@media screen and (max-width: 750px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+      
+    }
+   }

@@ -40,14 +40,14 @@ if(image===undefined){
         <div >
           <h2 className={style.title}>{breedName}</h2>
           <p>{description}</p>
-          <p><a href={url} target="_blank" rel="noopener noreferrer">More information</a></p>
+          <h4 className={style.link}><a href={url} target="_blank" rel="noopener noreferrer">More information</a></h4>
         </div>
       )}
 
       {!show &&
       (<div >
          <h2 className={style.title}>{breedName}</h2>
-      <p>{breedOrigin}</p>
+      <p className={style.title}>{breedOrigin}</p>
       </div>
       )}
     </div>
