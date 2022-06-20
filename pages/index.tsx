@@ -52,9 +52,9 @@ console.log('catBreeds', catBreeds)
       handleClick={handleClick}
       search={search}
       />
-
+      <div className={styles.breedDayContainer}>
       <h1 className={styles.breedDay}>Breed of The Day</h1>
-
+      </div>
       <MainBreed 
       image={catBreeds[0].image.url} 
       breedName={catBreeds[0].name} 
@@ -64,7 +64,7 @@ console.log('catBreeds', catBreeds)
       temperament={catBreeds[0].temperament}
       lifeSpan={catBreeds[0].life_span}    
       />
-      <h2  className={styles.breedDay}>Cat Breeds Around The World</h2>
+      <h1  className={styles.breedDay}>Cat Breeds Around The World</h1>
       <p  className={styles.subtitle}>Click on an image for more Information</p>
 
       <CollectionCats

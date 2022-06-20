@@ -1,15 +1,27 @@
 .title{
     margin: 0 0;
     text-align: center;
+    
+    
 }
 .image{
-    margin:0 1.5rem;
+    margin:1rem 1.5rem;
+    padding: 1rem 0.4rem;
+    background-color:#FF7396 ;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px black;
 }
 .container{
     display: flex;
     flex-direction: column;
     max-width: 20%;
     margin: 1rem 0rem
+}
+.text{
+    margin: 0 1rem;
+    background-color: #FFFFDE;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 @media screen and (max-width: 750px) {
 

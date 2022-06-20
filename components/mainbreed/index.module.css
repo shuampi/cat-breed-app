@@ -1,5 +1,7 @@
 .main{
     display: flex;
+    margin-bottom: 3rem;
+   
 
 }
 .section{
@@ -7,10 +9,27 @@
     margin: 0.2rem 2rem;
     max-width: 60%; 
     padding-right: 2rem;  
+    padding-left: 3rem;
+    background-color: #FFFFDE;
+    box-shadow: 7px 9px 12px black;
 }
 
 .image{
+    display: flex;
+    max-width: 40%;
     margin-left: 3rem;
+    padding: 1rem 0.4rem;
+    background-color:#FF7396 ;
+    border-radius: 3px;
+    box-shadow: 7px 9px 12px black;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    height: 2px;
+    background-color: black;
+    border: none;
 }
 
 @media screen and (max-width: 750px) {
@@ -18,11 +37,15 @@
     display: block;
    }
    .image{
-    margin: 0 2rem;
+    margin: 0 auto;
+    max-width: 80%;
+    
    }
    .section{
-    max-width: 100%;
-    padding: 0 0;
+    max-width: 80%;
+    padding-bottom: 1rem;
+    
+    margin: 0 auto;
    }
   
   }

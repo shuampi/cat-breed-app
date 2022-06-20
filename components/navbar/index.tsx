@@ -20,9 +20,12 @@ const NavBar = ({ handelSearch, handleClick, search }: NavBarProps) => {
     <>
     <nav className={style.container}>
       <div className={style.top}>
+        <Link href="/">
         <h1 className={style.header}>Cat Breeds</h1>
+        </Link>
+        <div className={style.icon}>
         <Image
-        className={style.icon}
+        
           src="/magnifier_icon.png"
           alt="search icon"
           width="40"
@@ -31,6 +34,7 @@ const NavBar = ({ handelSearch, handleClick, search }: NavBarProps) => {
             setShowSearch(!showSearch);
           }}
         />
+        </div>
       </div>
     
       {showSearch && (
@@ -41,6 +45,7 @@ const NavBar = ({ handelSearch, handleClick, search }: NavBarProps) => {
             type="search"
             onChange={handelSearch}
             value={search}
+            placeholder="search images of cats by breed, ex: Persian"
             required
           />
           <Link href="/search">
