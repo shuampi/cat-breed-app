@@ -4,7 +4,7 @@ import Image from "next/image";
 import style from "../styles/search.module.css";
 
 interface SearchProps {
-  photosFound: any;
+  photosFound: any[];
   handelSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleClick: () => void;
 }
