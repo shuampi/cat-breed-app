@@ -20,7 +20,7 @@ const Search = ({ photosFound, handleClick, handelSearch }: SearchProps) => {
         <p>Nothing found</p>;
       </>
     );
-  } else if(photosFound[0].breeds.length===0){
+  } else if(photosFound[0].breeds.length===undefined){
     return (
       <>
         <NavBar handelSearch={handelSearch} handleClick={handleClick} />
