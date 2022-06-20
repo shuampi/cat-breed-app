@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     
     console.log('Data', Data)
   
-    const imagesBreed = await fetch(`https://api.thecatapi.com/v1/images/search?limit=8&breed_ids=${dataID}`)
+    const imagesBreed = await fetch(`https://api.thecatapi.com/v1/images/search?limit=15&breed_ids=${dataID}`)
     const arrayImage = await imagesBreed.json()
     setPhotosFound(arrayImage)
   }

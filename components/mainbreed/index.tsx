@@ -20,6 +20,8 @@ const MainBreed = ({
   temperament,
   lifeSpan,
 }: MainBreedProps) => {
+
+  console.log('url mainbreed :>> ', url);
   return (
     <div>
       <div className={style.main}>
@@ -32,11 +34,11 @@ const MainBreed = ({
           <p>Temperament: {temperament}.</p>
           <p>Life Span: {lifeSpan} years.</p>
           <p>{description}</p>
-          <p>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+          <h4>
+            <a className={style.link} href={url} target="_blank" rel="noopener noreferrer">
               More Information.
             </a>
-          </p>
+          </h4>
         </section>
       </div>
       <div>

@@ -59,7 +59,7 @@ const NavBar = ({ handelSearch, handleClick, search }: NavBarProps) => {
               setShowSearch(false);
             }}
           >
-            X
+            x
           </div>
         </div>
       )}

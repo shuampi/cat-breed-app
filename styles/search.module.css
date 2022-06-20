@@ -1,0 +1,32 @@
+.section{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    max-width: 80%; 
+    padding-right: 2rem;  
+    padding-left: 3rem;
+    background-color: #FFFFDE;
+    box-shadow: 7px 9px 12px black;
+}
+
+.header{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+.picturesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.image{
+    margin:1rem 1.5rem;
+    padding: 1rem 0.4rem;
+    background-color:#FF7396 ;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px black;
+}
+@media screen and (max-width: 750px) {
+
+    .image{
+        max-width: 80%;
+    }
+}
