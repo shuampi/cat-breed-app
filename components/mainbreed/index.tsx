@@ -21,7 +21,7 @@ const MainBreed = ({
   lifeSpan,
 }: MainBreedProps) => {
 
-  console.log('url mainbreed :>> ', url);
+
   return (
     <div>
       <div className={style.main}>
