@@ -56,13 +56,13 @@ console.log('catBreeds', catBreeds)
       <h1 className={styles.breedDay}>Breed of The Day</h1>
       </div>
       <MainBreed 
-      image={catBreeds[0].image.url} 
-      breedName={catBreeds[0].name} 
-      description={catBreeds[0].description} 
-      url={catBreeds[0].cfa_url} 
-      origin={catBreeds[0].origin} 
-      temperament={catBreeds[0].temperament}
-      lifeSpan={catBreeds[0].life_span}    
+      image={catBreeds[28].image.url} 
+      breedName={catBreeds[28].name} 
+      description={catBreeds[28].description} 
+      url={catBreeds[28].cfa_url} 
+      origin={catBreeds[28].origin} 
+      temperament={catBreeds[27].temperament}
+      lifeSpan={catBreeds[28].life_span}    
       />
       <h1  className={styles.breedDay}>Cat Breeds Around The World</h1>
       <p  className={styles.subtitle}>Click on an image for more Information</p>

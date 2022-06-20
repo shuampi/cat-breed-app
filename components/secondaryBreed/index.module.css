@@ -11,6 +11,10 @@
     border-radius: 3px;
     box-shadow: 4px 4px 10px black;
 }
+.image:hover{
+    cursor: pointer;
+    background-color: #ffadc2;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -29,6 +33,12 @@
     max-width: 100%;
  }
  .image{
+    max-width: 70%;
     margin: 0 auto;
  }
+.text{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
    }
