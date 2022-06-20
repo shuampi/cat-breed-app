@@ -45,7 +45,7 @@ const NavBar = ({ handelSearch, handleClick, search }: NavBarProps) => {
             type="search"
             onChange={handelSearch}
             value={search}
-            placeholder="search images of cats by breed, ex: Persian"
+            placeholder="images, e.g., Persian"
             required
           />
           <Link href="/search">

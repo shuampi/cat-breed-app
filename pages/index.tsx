@@ -21,23 +21,6 @@ const Home= ({handelSearch, handleClick,search,catBreeds}:HomeProps) => {
   
   
 
-console.log('catBreeds', catBreeds)
-//console.log('catBreeds[0]', catBreeds[0].name)
-// const arrayOrigins = catBreeds.map(cat => cat.origin)
-// console.log('arrayOrigins', arrayOrigins)
-
-
-// const noDuplicateOrigins = arrayOrigins.filter((origin,index) =>{
-//   return arrayOrigins.indexOf(origin) === index
-// })
-
-// console.log('noDuplicateOrigins', noDuplicateOrigins)
-
-// const japanCats = catBreeds.filter(cat => cat.origin==="Japan")
-// console.log('japanCats', japanCats)
-
-// const unitedStateCats = catBreeds.filter(cat => cat.origin==="United States")
-// console.log('eeuuCats', unitedStateCats)
 
   return (
     <div className={styles.container}>

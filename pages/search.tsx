@@ -10,7 +10,7 @@ interface SearchProps {
 }
 
 const Search = ({ photosFound, handleClick, handelSearch }: SearchProps) => {
-  console.log("url :>> ", photosFound[0].breeds[0].cfa_url);
+  
 
   if (photosFound.length === 0) {
     return (
@@ -20,7 +20,7 @@ const Search = ({ photosFound, handleClick, handelSearch }: SearchProps) => {
         <p>Nothing found</p>;
       </>
     );
-  } else if(photosFound[0].breeds.length===undefined){
+  } else if(photosFound[0].breeds.length===0){
     return (
       <>
         <NavBar handelSearch={handelSearch} handleClick={handleClick} />
